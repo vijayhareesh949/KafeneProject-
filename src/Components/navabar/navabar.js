@@ -45,7 +45,7 @@ const NavaaBar = () => {
               <ul style={StyleUl}>
 
                 <li style={Liststyle}>
-                  <Link to='/orders' style={{ textDecoration: 'none', color: 'green' }} >Orders</Link>
+                  <Link to='/' style={{ textDecoration: 'none', color: 'green' }} >Orders</Link>
                 </li>
                 <li style={Liststyle}>
                   <Link to='/products' style={{ textDecoration: 'none', color: 'green' }}>Products</Link>
@@ -53,9 +53,7 @@ const NavaaBar = () => {
                 <li style={Liststyle}>
                   <Link to='/users' style={{ textDecoration: 'none', color: 'green' }}>Users</Link>
                 </li>
-                <li style={Liststyle2}> 
-                  <Link to='/Login' style={{ textDecoration: 'none', color: 'green'}}>Logout</Link>
-                </li>
+              
 
               </ul>
             </div>
