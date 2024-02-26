@@ -19,7 +19,7 @@ const LoginForm = () => {
     if (userData && userData.username === username && userData.password === password) {
       alert('Login successful!');
  
-      navigate('/orders');
+      navigate('/orders');    //Navigate to the orders page after sucussfully login    
     } else {
       alert('Invalid username or password');
     }

@@ -44,7 +44,8 @@ const RegistrationForm = () => {
     <>
    
       <div style={{ maxWidth: '400px', margin: '0 auto' }}>
-      <h2 >Register</h2>
+        <marquee>
+      <h2 >Registeration</h2></marquee>
       <form id="registerform" onSubmit={register}>
         <input
           type="text"
