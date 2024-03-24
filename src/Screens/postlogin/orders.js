@@ -5,6 +5,7 @@ import axios from "axios";
 import { Link } from "react-router-dom";
 
 
+
 function Orders() {
 
   const [orders, setOrders] = useState([]);
@@ -48,6 +49,7 @@ function Orders() {
   return (
       <main>
         <NavaaBar/>
+       
           <div className="PageWrapper">
               <h1 className="MainHeading">Orders</h1>
               <div className="OrdersWrapper">
@@ -101,7 +103,7 @@ function Orders() {
                               <tr className="TableRow" key={id+''+index}>
                                   
                                   <td className="SecondaryText">
-                                  <Link to={`/order/${id}`} style={{textDecoration:'none', color:'inherit'}}>
+                                  <Link to={`/order/${id}`} style={{textDecoration:'none', color:'red'}}>
                                       {id}
                                   </Link>
                                   </td>
@@ -113,8 +115,8 @@ function Orders() {
                                       <br/> 
                                       <span className="SecondaryText">{orderTime}</span>
                                   </td>
-                                  <td className="SecondaryText">{amount}</td>
-                                  <td className="PrimaryText">{orderStatus}</td>
+                                  <td className="SecondaryText" style={{color:'green'}}>INR:{amount}</td>
+                                  <td className="PrimaryText" >{orderStatus}</td>
                               </tr>
                           )}
                           </tbody>

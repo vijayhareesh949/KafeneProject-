@@ -8,34 +8,25 @@ const NavaaBar = () => {
   const StyleUl = {
     listStyleType: "none",
     display: 'flex',
-    margin: 0,
- 
+    margin: 0
+
   }
   const Liststyle = {
     display: 'inline',
-    marginRight: '100px',
+    marginRight: '210px',
     fontSize: '40px'
 
   }
 
-  const Liststyle2= {
-    position: 'absolute',
-    marginLeft:' 1500px',
-    fontSize:'40px',
-  
-
-
-
-
-  }
   return (
     <>
       <nav className="navbar navbar-expand-sm bg-dark navbar-dark">
         <div className="container-fluid">
           <a className="navbar-brand" href="#">
-            <img src={photo} alt="" style={{ width: 150,marginLeft:'20px'}} className="rounded-pill" />
+            <img src={photo} alt="" style={{ width: '200px',height:'90px', marginRight: '90px'}} className="rounded-pill" />
           </a>
-        <h2>KAFENE</h2>
+          <h2>KAFENE</h2>
+
         </div>
       </nav>
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
@@ -43,9 +34,12 @@ const NavaaBar = () => {
           <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div className="navbar-nav">
               <ul style={StyleUl}>
+                <li style={Liststyle}>
+                  <Link to='/' style={{ textDecoration: 'none', color: 'green' }}>Home</Link>
+                </li>
 
                 <li style={Liststyle}>
-                  <Link to='/' style={{ textDecoration: 'none', color: 'green' }} >Orders</Link>
+                  <Link to='/orders' style={{ textDecoration: 'none', color: 'green' }} >Orders</Link>
                 </li>
                 <li style={Liststyle}>
                   <Link to='/products' style={{ textDecoration: 'none', color: 'green' }}>Products</Link>

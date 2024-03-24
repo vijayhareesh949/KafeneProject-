@@ -71,7 +71,7 @@ function Products() {
 
     return (
         <main>
-            <NavaaBar/>
+            <NavaaBar/> 
         <div className="PageWrapper">
             <h1 className="MainHeading">Products</h1>
             <div className="OrdersWrapper">
@@ -111,7 +111,7 @@ function Products() {
                             <tr className="TableRow" key={id+''+index}>
                                 
                                 <td className="SecondaryText">
-                                <Link to={`/product/${id}`} style={{textDecoration:'none', color:'inherit'}}>
+                                <Link to={`/product/${id}`} style={{textDecoration:'none', color:'red'}}>
                                     {id}
                                 </Link>
                                 </td>           
