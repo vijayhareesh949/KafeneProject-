@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import NavaaBar from "../../Components/navabar/navabar";
 
 
+
 function Products() {
 
     const [products, setProducts] = useState([]);
@@ -106,8 +107,9 @@ function Products() {
                             <th style={{minWidth:'100px'}}>Expiry Date</th>
                             <th>Unit Price</th>
                             <th>Stock</th>
+                        
                         </tr>
-                        {displayProducts.map(({ id, medicineName, medicineBrand, stock, unitPrice, expiryDate }, index) => 
+                        {displayProducts.map(({ id, medicineName, medicineBrand, stock, unitPrice, expiryDate,cart,image }, index) => 
                             <tr className="TableRow" key={id+''+index}>
                                 
                                 <td className="SecondaryText">
@@ -120,6 +122,8 @@ function Products() {
                                 <td className="PrimaryText">{expiryDate}</td>
                                 <td className="SecondaryText">{unitPrice}</td>
                                 <td className="SecondaryText">{stock}</td>
+                                <td><button className="PrimaryText"  style={{color:'red'}}>{cart} Add to cart</button></td>
+                               
                             </tr>
                         )}
                         </tbody>

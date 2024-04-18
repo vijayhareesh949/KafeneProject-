@@ -13,7 +13,7 @@ const NavaaBar = () => {
   }
   const Liststyle = {
     display: 'inline',
-    marginRight: '210px',
+    marginRight: '240px',
     fontSize: '40px'
 
   }

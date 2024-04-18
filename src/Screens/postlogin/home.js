@@ -79,7 +79,7 @@ const homeScreen = () => {
         </div>
 
 
-        <div className="row">
+        <div className="row" >
           <div className="col-sm-4">
             <div className="card mb-3" style={{ height: '400px' }}>
               <br />
@@ -95,7 +95,7 @@ const homeScreen = () => {
               <img src="https://img.freepik.com/premium-vector/secure-payment-with-mobile-banking-application_258153-435.jpg" className="card-img-top" alt="img1" style={{ width: '210px', alignSelf: 'center' }} />
               <div className="card-body">
                 <h2>Secure Payments</h2>
-                <p className="card-text">Secure payments we accepts online paymnets like Googlepay,phonepay etc..,debit/credit Cards </p>
+                <p className="card-text">Secure payments we accepts online paymnets like UPI,debit/credit Cards. </p>
               </div>
             </div>
           </div>

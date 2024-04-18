@@ -8,6 +8,7 @@ import homeScreen from "../../Screens/postlogin/home"
 
 
 
+
 const Navagtion = () => {
 
     return (
@@ -23,7 +24,7 @@ const Navagtion = () => {
                     <Route path="/orders" Component={Orders} />
                     <Route path="/users" Component={Users} />
                     <Route path="/products" Component={Products} />
-                   
+            
 
 
                 </Routes>
